@@ -12,8 +12,23 @@ To write a Python program that counts the number of lines in a text file `story.
 4. After processing all lines, print the `count` value, which represents the number of lines that do not start with `'T'`.
 
 ## 🧾 Program
-Add code here
+~~~
+def count_lines_not_starting_with_T(filename):
+    count = 0  
+    with open(filename, "r") as file:
+        for line in file:
+            if not line.startswith('T'):
+                count += 1
+    return count
+
+result = count_lines_not_starting_with_T("story.txt")
+print("Number of lines that do not start with 'T':", result)
+
+
+~~~
 
 ## Output
+![WhatsApp Image 2025-10-20 at 15 00 09_458980ee](https://github.com/user-attachments/assets/f2d64c74-9918-46af-ac16-77644294a679)
 
 ## Result
+Thus , the program has been executed succesfully.
