@@ -22,7 +22,7 @@ def count_lines_not_starting_with_T(filename):
     return count
 
 result = count_lines_not_starting_with_T("story.txt")
-print("Number of lines that do not start with 'T':", result)
+print("Number of lines that not starting with 'T':", result)
 
 
 ~~~
