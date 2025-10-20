@@ -14,7 +14,6 @@ To write a Python program that merges **two dictionaries** and combines their ke
 dict1 = eval(input())
 dict2 = eval(input())
 def merge(d1, d2):
-    # Merge using unpacking operator (**)
     merged_dict = {**d1, **d2}
     return merged_dict
 result = merge(dict1, dict2)
